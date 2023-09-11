@@ -1,0 +1,39 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slack</a></title>
+    <link rel="stylesheet" href="style.css">
+<body>
+    
+    
+    <!--name-->
+    <h1 data-testid="slackUsername">Charles wisdom!</h1>
+    <!--picture-->
+  <img src="slack/IMG-20220508-WA0000.jpg"width="200" height="150" alt="Charleswisdom" data-testid="slackDisplay">
+  <!--weekday-->
+ <p data-testid = "currentDayofTheWeek">Sunday</p>
+ <!--Time-->
+ <p data-testid="currentUTCTime"><span>1694414862712</p>
+ <!--Track-->
+ <p data-testid="myTrack">Frontend</p> 
+</div>
+<a href="" data-testid="githubURL">GitHub Repository</a>
+</div>
+
+
+ 
+
+</body>
+<script>
+    function updateUTCTime() {
+    const utcTimeElement = document.querySelector('[data-testid="currentUTCTime"]');
+    const currentTime = Date.now();
+    utcTimeElement.textContent = currentTime;
+}
+
+setInterval(updateUTCTime, 2000); // Update every second
+updateUTCTime(); // Update immediately
+</script>
+</html>
